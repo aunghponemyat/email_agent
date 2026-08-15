@@ -49,21 +49,27 @@ This step needs to run only once but requires some careful handling and accuracy
    client ID**.
    - Application type: **Desktop app**.
    - Download the resulting JSON file from the dialog box that pops up, rename it `credentials.json`, and put it in the project root.
-5. Copy `.env.example` to `.env` and fill in `GEMINI_API_KEY`.
+5. Copy `.env.example` to `.env` and fill in `GEMINI_API_KEY`
 
-### 4. First run
+## Usage
 
+### 1. Activating the environment
+
+You need to activate the virual environment every time before you start the agent.
+
+For regular virtualenv
 ```bash
-python main.py
+source .venv/bin/activate
+python src/email_agent/main.py
+```
+For poetry 
+```bash
+poetry shell
+python src/email_agent/main.py
 ```
 
 The first run will open a browser window asking you to log in and approve read-only Gmail access. After your approval, a `token.json` file is saved in the project's root directory so future runs don't ask again (until the token expires).
 
-## Usage
-
-```bash
-python main.py
-```
 
 Each run pulls up to `MAX_EMAILS_PER_RUN` unread emails (default 10),
 classifies any it hasn't seen before, and prints the results.

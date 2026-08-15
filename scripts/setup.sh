@@ -11,7 +11,7 @@
 
 echo "Creating virtualenv (.venv/) in project..."
 
-if command -v poetry >/dev/null 2&1;then
+if command -v poetry >/dev/null 2>&1;then
     echo "Poetry found. Using poetry..." 
     poetry config --local virtualenvs.in-project true
 
