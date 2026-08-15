@@ -32,6 +32,7 @@ else
 
     PYTHON_CMD="python3"
     PRE_COMMIT_CMD="pre-commit"
+fi
 
 if [ ! -d ".git" ]; then
     git init
