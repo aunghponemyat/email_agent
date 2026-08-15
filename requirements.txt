@@ -1,0 +1,6 @@
+google-genai>=2.18.1
+google-auth-oauthlib>=1.40
+google-auth-httplib2>=0.4.1
+google-api-python-client>=2.198.0
+pydantic>=2.13.4
+pydantic-settings>=2.15.0

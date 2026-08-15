@@ -1,0 +1,32 @@
+[
+  {
+    "sender": "boss@company.com",
+    "subject": "Can you send me the Q3 numbers by EOD?",
+    "body": "Hey, need the Q3 revenue breakdown for a board meeting tomorrow morning. Can you send it over today?",
+    "expected_category": "needs_reply"
+  },
+  {
+    "sender": "notifications@github.com",
+    "subject": "[repo] New comment on your pull request",
+    "body": "someone commented: looks good to me, merging now.",
+    "expected_category": "fyi"
+  },
+  {
+    "sender": "newsletter@techcrunch.com",
+    "subject": "Today's top startup news",
+    "body": "Here are today's top 5 stories in tech...",
+    "expected_category": "newsletter"
+  },
+  {
+    "sender": "billing@saascompany.com",
+    "subject": "Action required: update your payment method",
+    "body": "Your card on file has expired. Please update your payment method within 5 days to avoid service interruption.",
+    "expected_category": "action_item"
+  },
+  {
+    "sender": "prince@nigeria-lottery.biz",
+    "subject": "YOU HAVE WON $5,000,000",
+    "body": "Congratulations! To claim your prize please send your bank details...",
+    "expected_category": "spam"
+  }
+]
