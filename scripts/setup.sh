@@ -29,6 +29,7 @@ else
     python3 -m pip install --upgrade pip
     echo "Installing package dependencices..."
     pip install -r requirements.txt
+    pip install -e .
 
     PYTHON_CMD="python3"
     PRE_COMMIT_CMD="pre-commit"
